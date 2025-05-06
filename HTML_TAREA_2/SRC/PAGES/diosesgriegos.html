@@ -7,18 +7,23 @@
     <title>diosesgriegos</title>
     <meta name="description" content="Dioses Griegos: Zeus, Poseidón, Hades y más. Descubre las historias fascinantes de la mitología griega.">
     <meta name="keywords" content="dioses griegos, mitología griega, Zeus, Poseidón, Hades">
-    <meta name="author" content="Marcelo Casafus">    
+    <meta name="author" content="Marcelo Casafus">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="../style/estilo.css">
+    <link rel="stylesheet" href="../style/diosesgriegos.css">    
 <body>
     <main>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="./diosesgriegos.html">Dioses Griegos</a></li>
-                    <li><a href="./heroes.html"> Heroes Griegos</a></li>
-                    <li><a href="./mitos.html">Mitos Griegos</a></li>
-                </ul>
+        <div class="header">
+            <nav>    
+            <a href="./diosesgriegos.html">Dioses Griegos</a>
+            <a href="./heroes.html">Heroes Griegos</a>
+            <a href="./mitos.html">Mitos Griegos</a>
             </nav>
-        </header>
+            <input type="button" value="Aceptar">
+            <input type="password" placeholder="Contraseña" size="20">
+            <input type="text" placeholder="Usuario" size="20">
+        </div>
+       
         <h1>Los dioses griegos</h1>
         <div>
         <p>La mitología griega es el conjunto de relatos, leyendas y creencias que los antiguos griegos tenían sobre sus dioses y héroes. <br>
@@ -146,11 +151,7 @@
     
         <iframe width="560" height="315" src="https://www.youtube.com/embed/FrzPJicCh2M?si=kiF5KgEN16lUxOz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
        <br><br>
-       <h4>Registro de Usuario</h4>
-       <input type="text" placeholder="Usuario" size="20"><br>
-       <input type="password" placeholder="Contraseña" size="20"> <br>
-       <input type="button" value="Aceptar">
-       <input type="reset" value="Borrar"><br><br>
+        <button onclick="history.back()">Volver</button>
     </main>
     <footer>
         <p>&copy; 2025 contacto: MarceloCasafus</p>
