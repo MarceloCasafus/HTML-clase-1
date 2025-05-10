@@ -1,0 +1,32 @@
+/* estilo en enlases*/
+.header {
+    overflow: hidden;
+    background-color: rgb(65, 53, 240);
+}
+.header a{
+    float: left;
+    display: block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.header a:hover {
+    background-color: #e40202;
+    color: rgb(245, 242, 242);
+}
+
+
+/* Estilo para el cuerpo de la página */
+body {
+    background-color: #f0d3d3;
+    font-family: Arial, sans-serif;
+}
+/* Estilo para el encabezado */
+header {
+    background-color: #81c3dd;
+    color: white;
+    padding: 10px 0;
+    text-align: left;
+}
