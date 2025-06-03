@@ -1,0 +1,99 @@
+
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poller+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*************** CUSTOM PROPERTIES ***************/
+:root {
+  --primary-color: #6e3012;
+  --primary-alpha-color: rgba(110, 48, 18, 0.8);
+  --secondary-color: #e49826;
+  --white-color: #ffffff;
+  --primary-font: 'Roboto', sans-serif;
+}
+
+/*************** RESET ***************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+body {
+  background-color: var(--primary-alpha-color);
+}
+/*************** SLIDER ***************/
+.slider_box {
+  display: flex;
+  width:  1280px;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden;
+}
+.slider_box ul {
+  padding: 0;
+  display: flex;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+.slider_box ul li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+  ;
+}
+.slider_box ul li img {
+  width:   100%;
+  
+
+}
+@keyframes slide {
+  0%   { margin-left: 0; }
+  20%  { margin-left: 0; }
+  25%  { margin-left: -100%; }
+  45%  { margin-left: -100%; }
+  50%  { margin-left: -200%; }
+  70%  { margin-left: -200%; }
+  75%  { margin-left: -300%; }
+  100% { margin-left: -300%; }
+}
+/*************** FONTS ***************/
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+/*************** STYLES ***************/
+img {
+    width: 150px;
+    height: 80px;
+}
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+
+.nav_container .nav_logo {
+  align-items: center;
+  display: flex;
+  column-gap: 10px;
+}
+
+.nav_container .nav_menu {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.nav_container .nav_menu a {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--white-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav_container .nav_menu a:hover {
+  color: var(--secondary-color);
+  transform: scale(1.1);
+}
